@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <button onclick="alert('executed')">
+        click me
+    </button>
+    <input name="message" placeholder="아무거나 입력해보세요"/>
+    <script>
+        document.querySelector('input').onChange = (e) => {
+            console.log(e)
+            console.log(this.value)
+        }
+        // $("#message").onChange(function() {
+        //     console.log($(this).val())
+        // })
+        //document.querySelector("input").onchange = function (e) {
+        //console.log(e)
+        //console.log(this.value)
+    //}
+    </script>
+</body>
+</html>

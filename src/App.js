@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+// import Counter from "./Counter";
+//import Say from "./Say";
+//import EventPractice from "./EventPractice";
+//import EventPracticeFn from "./EventPracticeFn";
+//import ValidationSample from "./ValidationSample";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { Component } from "react";
+import IterationSample from "./IterationSample";
+
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <IterationSample />
+      </div>
+    );
+  }
+
+  // render() {
+  //   return (
+  //     <div>
+  //       <Scrollbox ref={(ref) => (this.scrollbox = ref)} />
+  //       <button onClick={() => this.scrollbox.scrollToBottom()}>
+  //         맨 밑으로
+  //       </button>
+  //       <button onClick={() => this.scrollbox.scrollToTop()}>맨 위로</button>
+  //     </div>
+  //   );
+  // }
 }
+
+// const App = () => {
+//   return <ValidationSample />;
+// };
 
 export default App;
